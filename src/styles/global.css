@@ -1,0 +1,27 @@
+/* global.css */
+/* global.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Блокируем горизонтальную прокрутку */
+  }
+  
+  /* Когда сайдбар открыт, блокируем прокрутку страницы */
+  .no-scroll {
+    overflow: hidden; /* Блокируем вертикальную прокрутку */
+  }
+  
+  nav {
+    background-color: black;
+    padding: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+  }
+  
+
+  
+  

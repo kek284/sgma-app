@@ -1,13 +1,13 @@
-// src/components/Post.jsx
+// Post.jsx
 import React from 'react';
+import './../styles/Post.css';
 
 const Post = ({ post }) => {
   return (
     <div className="post">
-      <h2>{post.title}</h2> {/* Заголовок поста */}
-      <p>{post.body}</p> {/* Тело поста */}
-      {post.image && <img src={post.image} alt="Post" />} {/* Изображение, если есть */}
-      <p>{new Date(post.timestamp).toLocaleString()}</p> {/* Время публикации */}
+      <h2>{post.title}</h2>
+      <p>{post.content}</p>
+      <p>Author: {post.author}</p>
     </div>
   );
 };

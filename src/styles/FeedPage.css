@@ -1,0 +1,140 @@
+/* Для всего документа */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Черный фон для всей страницы */
+    color: white; /* Белый текст для контраста */
+    overflow-y: auto;
+}
+
+  .feed-content {
+    padding-top: 70px; /* чуть больше, чем высота .feed-header */
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  
+  /* feed-header */
+  .feed-header {
+    position: fixed;
+    gap: 20px;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    letter-spacing: 1.5px; /* увеличиваем межбуквенное расстояние */
+    margin-top: 10px;
+    background: #000; /* или другой цвет */
+    z-index: 100;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px; /* фиксируем высоту */
+    border-bottom: 1px solid #333;
+  }
+  
+  .feed-page {
+      position: relative;
+      /* overflow: visible; Чтобы не было прокрутки */
+      background-color: black; /* Черный фон для всей страницы */
+      height: 100vh; /* Убедимся, что высота страницы охватывает весь экран */
+  }
+  
+  /* Когда сайдбар открыт, блокируем прокрутку */
+  .no-scroll {
+      overflow: hidden;
+  }
+  
+  /* Стиль для кнопки меню */
+  .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+  /* Стили вкладок */
+  .tabs {
+      display: flex;
+      gap: 16px;
+      margin: 0 auto;
+      font-size: 20px;
+  }
+  
+  .tabs span {
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease; /* Плавный переход для вкладок */
+  }
+  
+  .tabs .active {
+      font-weight: bold;
+      text-decoration: underline;
+      color: #b7bab7; /* Цвет для активной вкладки */
+  }
+  
+  .tabs span:hover {
+      color: #b7bab7; /* Цвет при наведении на вкладки */
+  }
+  
+  /* Плавная анимация для контента вкладок */
+  .feed-content {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+  }
+  
+  .fab-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #763a5f;
+    color: white;
+    font-size: 32px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(66, 3, 52, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1100;
+  }
+  
+  .fab-button:hover {
+    background-color: #763a5f;
+  }
+  
+  .tab-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+  }
+  
+  .tab-content.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+  }
+  
+  .tab-content.hide {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+  }
+  .sidebar-toggle {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 100;
+  }
+  
+  

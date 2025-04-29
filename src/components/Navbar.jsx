@@ -1,13 +1,13 @@
+// Navbar.jsx
+import React from 'react';
 import { Link } from 'react-router-dom';
+import './../styles/Navbar.css';
 
-const Navbar = () => {
-  return (
-    <nav>
-      <Link to="/">Лента</Link>
-      <Link to="/upload">Загрузить</Link>
-      <Link to="/profile/123">Профиль</Link>
-    </nav>
-  );
-};
+const Navbar = () => (
+  <nav>
+    <Link to="/feed">Feed</Link>
+    <Link to="/profile">Profile</Link>
+  </nav>
+);
 
 export default Navbar;

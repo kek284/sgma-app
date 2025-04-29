@@ -1,13 +1,14 @@
-// src/components/UserPosts.jsx
+// UserPosts.jsx
 import React from 'react';
-import Post from './Post';  // Допустим, у нас уже есть компонент для отдельного поста
+import PostList from './PostList';
 
-const UserPosts = ({ posts }) => {
+const UserPosts = ({ userId, posts }) => {
+  const userPosts = posts.filter(post => post.authorId === userId);
+
   return (
     <div className="user-posts">
-      {posts.map((post) => (
-        <Post key={post.id} post={post} />
-      ))}
+      <h1>User's Posts</h1>
+      <PostList posts={userPosts} />
     </div>
   );
 };

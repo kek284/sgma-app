@@ -1,0 +1,54 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #222;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Общий стиль пунктов */
+  .sidebar-item {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #3a3a3a;
+  }
+  
+  /* Обновлённый стиль для Close */
+  .sidebar-item.close {
+    background-color: #763a5f; /* синий цвет (можно поменять) */
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: auto;
+    box-shadow: 0 0 8px rgba(66, 3, 52, 0.4);
+  }
+  
+  .sidebar-item.close:hover {
+    background-color: #763a5f;
+  }
+  

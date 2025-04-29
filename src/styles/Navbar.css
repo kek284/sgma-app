@@ -1,0 +1,15 @@
+/* Navbar.css */
+nav {
+    display: flex;
+    justify-content: center; /* Выравнивание ссылок по центру */
+    align-items: center; /* Вертикальное выравнивание */
+    height: 60px; /* Установите высоту для navbar */
+    background-color: black; /* Можно добавить фон для navbar */
+  }
+  
+  nav a {
+    margin: 0 15px; /* Расстояние между ссылками */
+    text-decoration: none;
+    color: white; /* Цвет текста */
+  }
+  
