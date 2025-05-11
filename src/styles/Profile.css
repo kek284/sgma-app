@@ -1,0 +1,57 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.profile-info input[type="file"] {
+  margin-bottom: 1rem;
+}
+
+.profile-info input,
+.profile-info textarea {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+.profile-info button {
+  margin-top: 1rem;
+}
+
+.profile-meta {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.logout-button {
+  margin-left: auto;
+  background-color: #763a5f;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+.profile-actions {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  position: relative; /* Добавляем для корректного позиционирования */
+  z-index: 1; /* Убедимся, что кнопки над модальным окном */
+}

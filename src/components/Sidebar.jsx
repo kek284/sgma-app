@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './../styles/Sidebar.css';
 
 const Sidebar = ({ isOpen, onClose }) => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add('no-scroll');
@@ -16,7 +19,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-      <div className="sidebar-item">Profile</div>
+      <button onClick={() => navigate('/profile')}>Профиль</button>
       <div className="sidebar-item">Settings</div>
       <div className="sidebar-item close" onClick={onClose}>Close</div>
     </div>

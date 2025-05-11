@@ -1,0 +1,66 @@
+/* Основная кнопка выхода */
+.logout-button {
+    background-color: #763a5f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #763a5f;
+  }
+  
+  /* Модальное окно подтверждения */
+  .confirmation-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .dialog-content {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .dialog-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .confirm-button {
+    background-color: #763a5f;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cancel-button {
+    background-color: #757575;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

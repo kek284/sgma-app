@@ -1,0 +1,12 @@
+.profile-info {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
